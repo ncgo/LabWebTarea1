@@ -1,0 +1,67 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.hero {
+    height: 90vh;
+    background-color: #004AAD;
+}
+
+.hero-img {
+    object-fit: cover;  
+    opacity: 0.3;
+    filter: grayscale(100%);
+}
+
+.carousel-caption {
+    top: 0%;
+    padding-top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+}
+
+.carousel-caption img {
+    height: 40vh;
+}
+
+#vehicles {
+    height: 60vh;
+    padding: 10px;
+    padding-top:5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-img-top {
+    object-fit: cover; 
+    height:50%; 
+}
+
+#stats {
+    height: 30vh;
+    width: 100vw;
+    background-color: #004AAD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#stats p {
+    margin: 0;
+}
+
+#members2022 {
+    text-align: center;
+    padding: 5vh;
+}
+
+.acc {
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+}

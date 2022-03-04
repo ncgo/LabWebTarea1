@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>VantTec</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/assets/brand/LogoBlanco.png"
+              alt=""
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            VantTec
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#vehicles">Vehículos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Members
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#members2022">2022</a></li>
+                  <li><a class="dropdown-item" href="#">2021</a></li>
+                  <li><a class="dropdown-item" href="#">2020</a></li>
+                  <li><a class="dropdown-item" href="#">2019</a></li>
+                  <li><a class="dropdown-item" href="#">2018</a></li>
+                  <li><a class="dropdown-item" href="#">2017</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Research + Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="hero">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel carousel-fade slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active hero">
+            <img
+              src="/assets/img/IMG_7356.JPG"
+              class="d-block w-100 hero-img"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <img src="assets/brand/LogoBlanco.png" alt="" />
+              <h5 class="m-4">Navegando desde el 2017</h5>
+            </div>
+          </div>
+          <div class="carousel-item hero">
+            <img
+              src="/assets/img/IMG_7357.jpeg"
+              class="d-block w-100 hero-img"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <img src="assets/brand/LogoBlanco.png" alt="" />
+              <h5 class="m-4">Navegando desde el 2017</h5>
+            </div>
+          </div>
+          <div class="carousel-item hero">
+            <img
+              src="/assets/img/IMG_7358.jpeg"
+              class="d-block w-100 hero-img"
+              alt="..."
+            />
+            <div class="carousel-caption">
+              <img src="assets/brand/LogoBlanco.png" alt="" />
+              <h5 class="m-4">Navegando desde el 2017</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div id="vehicles">
+      <div
+        class="card shadow-lg p-3 mb-5 bg-body rounded"
+        style="width: 20vw; height: 50vh"
+      >
+        <img src="/assets/img/bote.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5>USV - Bote</h5>
+          <p class="card-text">
+            <b>The OG.</b> Participante de la competencia Roboboat.
+          </p>
+          <button type="button" class="btn btn-outline-primary">
+            Conoce más
+          </button>
+        </div>
+      </div>
+      <div
+        class="card shadow-lg p-3 mb-5 bg-body rounded"
+        style="width: 20vw; height: 50vh"
+      >
+        <img src="/assets/img/submarino.JPG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5>UUV - Submarino</h5>
+          <p class="card-text">Participante de la competencia RoboSub.</p>
+          <button type="button" class="btn btn-outline-primary">
+            Conoce más
+          </button>
+        </div>
+      </div>
+      <div
+        class="card shadow-lg p-3 mb-5 bg-body rounded"
+        style="width: 20vw; height: 50vh"
+      >
+        <img src="/assets/img/dron.JPG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5>Dron</h5>
+          <p class="card-text">
+            Antes parte de RoboBoat, nuevos retos en esta área.
+          </p>
+          <button type="button" class="btn btn-outline-primary">
+            Conoce más
+          </button>
+        </div>
+      </div>
+      <div
+        class="card shadow-lg p-3 mb-5 bg-body rounded"
+        style="width: 20vw; height: 50vh"
+      >
+        <img src="/assets/img/carro.JPG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5>Carro Autónomo</h5>
+          <p class="card-text">
+            <b>Lo más nuevo.</b> Nuestro primer vehículo tripulado.
+          </p>
+          <button type="button" class="btn btn-outline-primary">
+            Conoce más
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="stats">
+      <div class="container">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="#FFDE59"
+          class="bi bi-trophy-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z"
+          />
+        </svg>
+        <p><b>Premio a la Investigación Rómulo Garza 2020</b></p>
+        <p><b>Primer lugar</b> general Roboboat 2020</p>
+        <p><b>Tercer lugar</b> general Roboboat 2020</p>
+      </div>
+    </div>
+    <div id="members2022">
+        <h2>Conócenos</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Miembros 2022
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Miembros 2021
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body acc">
+                    <div id="accordion-row">
+                        <ul>
+                            <li>Abiel Fernandez Cantu</li>
+                            <li>Alejandro González García</li>
+                            <li>Alejandra Estefanía Monsivais Leyva</li>
+                            <li>Alexia Geronis Espinoza</li>
+                            <li>Ana Cristina García Dávila</li>
+                            <li>Andrea Rangel Hernández</li>
+                            <li>Andrés Emilio Sánchez Calvo</li>
+                            <li>Angel Fernando Ceballos Espinoza</li>
+                            <li>David Rogelio Saláis Carrasco</li>
+                            <li>Diana Abigail Torres Herrera</li>
+                            <li>Diego Martínez González</li>
+                            <li>Edgar Andrés Rodriguez Gallegos</li>
+                            <li>Edison Altamirano Ávila</li>
+                            <li>Francisco Javier Aguilar Rojas</li>
+                            <li>Francisco Zamora Treviño</li>
+                            <li>Freed Eduardo Ortega Cabral</li>
+                            <li>Gabriel Jesús Leal Cantú</li>
+                            <li>Gerardo Berni Ríos</li>
+                            <li>Ian De la Garza González</li>
+                            <li>Ivan Eric Díaz Arenas</li>
+                            <li>Ivana Collado González</li>
+                            <li>Jair Barrera Salazar</li>
+                            <li>Jesús Eduardo Arteaga Lara</li>
+                        </ul>
+                    </div>
+                    <div class="accordion-row">
+                        <ul>
+                            <li>Jorge Carlos Medina Rodriguez</li>
+                            <li>Jorge Luis Vázquez García</li>
+                            <li>José Ernesto Monroy Valdez</li>
+                            <li>José Miguel Carrillo Hernández</li>
+                            <li>Juan Carlos Velazquez de Leon Ortega</li>
+                            <li>Kenia Gabriela Sanchez Duran</li>
+                            <li>Maritza Esmeralda Castañuela Ramón</li>
+                            <li>Mauricio Aguilar Macías</li>
+                            <li>Mildred Gil Melchor</li>
+                            <li>Nadia Corina García Orozco</li>
+                            <li>Pablo César Ruíz Hernández</li>
+                            <li>Pedro Antonio Gamez Hernandez</li>
+                            <li>Penélope Cerón Castillo</li>
+                            <li>Rafael Alonso Ugarte Rojas</li>
+                            <li>Ricardo Andrés Arriaga Quezada</li>
+                            <li>Roberto Mendivil Castro</li>
+                            <li>Rodolfo Cuan Urquizo</li>
+                            <li>Samuel Alejandro Ortiz Merida </li>
+                            <li>Saúl Bermea González</li>
+                            <li>Victor Sebastian Martínez Pérez</li>
+                            <li>Yulisa Medina Maldonado</li>
+                            <li>Omar Diego Valenzuela Robin</li>
+                            <li>Roberto Reyes</li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Miembros 2020
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor</div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div id="blog"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
